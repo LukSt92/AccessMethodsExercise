@@ -21,10 +21,10 @@ namespace AccessMethodsExercise
             foreach (Animal animal in animals)
             {
                 animal.MakeNoise();
-                if (animal is Hippo hippo)
-                    hippo.Swim();
-                if (animal is Wolf wolf)
-                    wolf.HuntInPack();
+                if (animal is ISwimmer swimmer)
+                    swimmer.Swim();
+                if (animal is IPackHunter hunter)
+                    hunter.HuntInPack();
             }
             Console.WriteLine();
         }
