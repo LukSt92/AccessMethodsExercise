@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AccessMethodsExercise
 {
-    class Hippo : Animal
+    class Hippo : Animal, ISwimmer
     {
         public override void MakeNoise()
         {
